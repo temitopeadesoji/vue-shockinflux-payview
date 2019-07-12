@@ -19,15 +19,60 @@ npm install vue vue-shockinflux-payview --save
 ```javascript
 <!-- Vue -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
 <!-- Vue-shockinflux-payview -->
 <script src="https://unpkg.com/vue-shockinflux-payview@1.0.0/dist/shockinflux.min.js"></script>
+```
+    <div id="app">
+      <shockinflux-payview
+                :email="email"
+                :amount="amount"
+                currency="ngn"
+                template="modern"
+                language="en"
+                action="float"
+                :transactionid="transactionid"
+                :storeid="storeid"
+                :comment="comment"
+                :callback="callback"
+                style-class="paymentbtn"
+                :close="close"
+      >
+        <i class="fas fa-money-bill-alt"></i>
+        Make Payment
+      </shockinflux-payview>
+    </div>
+
+    <script type="text/javascript">
+      new Vue({
+        el: "#app",
+        components: {
+          ShockinfluxPayview: ShockinfluxPayview.default
+        },
+        methods: {
+          callback: function(response) {
+            console.log(response);
+          },
+          close: function() {
+            console.log("Payment canceled");
+          }
+        },
+        data: {
+          email: "foobar@example.com",
+          amount: 10000,
+          transactionid: "836327236732632671009",
+          storeid: "g1xq8y87************9XBJbKXuZo+x3uqw=",
+          comment: "This is a test"
+        }
+      });
+    </script>
 ```
 
 ### Usage
 
 ##### Via NPM
 
-###### my-compnent.vue sample
+###### shockinflux-payview.vue
 
 ```vue
 <template>
