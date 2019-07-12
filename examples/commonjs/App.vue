@@ -28,7 +28,7 @@ export default {
           email: "foobar@example.com",
           amount: 10000,
           transactionid: "836327236732632671009",
-          storeid: "g1xq8y87y800000U2FsdGVkX1/LaykxunCYjDqjtawGReF+0CLekeY8v7YNA3U4jjYZo4OMehhOt5WpudyuTJYG2AACiy/JNw1IhlfCFVYDF3B7Hu0AHU4qOsLiAh15Kkal7dF8zi7Sb0g9HHhXo7q4X3FYeRERDjGqnCa0gOBmcjyn/niZtvb01Rtt5Ugcg5CUpIAWmZShwKgLyerrG1vrwuSqEischxDKapM5avW9XBJbKXuZo+x3uqw=",
+          storeid: "g1xq8y87************9XBJbKXuZo+x3uqw=",
           comment: "This is a test",
         }
     },

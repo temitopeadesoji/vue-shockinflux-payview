@@ -19,18 +19,23 @@
   </head>
   <body>
     <div id="app">
-      <ShockinfluxPayview
-        style-class="paymentbtn"
-        email="temitopeadesoji23@gmail.com"
-        :amount="amount"
-        :reference="reference"
-        :callback="callback"
-        :close="close"
-        currency="NGN"
+      <shockinflux-payview
+                :email="email"
+                :amount="amount"
+                currency="ngn"
+                template="modern"
+                language="en"
+                action="float"
+                :transactionid="transactionid"
+                :storeid="storeid"
+                :comment="comment"
+                :callback="callback"
+                style-class="paymentbtn"
+                :close="close"
       >
         <i class="fas fa-money-bill-alt"></i>
         Make Payment
-      </ShockinfluxPayview>
+      </shockinflux-payview>
     </div>
 
     <script type="text/javascript">
@@ -52,7 +57,7 @@
           amount: 10000,
           transactionid: "836327236732632671009",
           storeid: "g1xq8y87************9XBJbKXuZo+x3uqw=",
-          comment: "This is a test",
+          comment: "This is a test"
         }
       });
     </script>
