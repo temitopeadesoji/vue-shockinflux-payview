@@ -20,6 +20,7 @@ npm install vue vue-shockinflux-payview --save
 <!-- Vue -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <!-- Vue-shockinflux-payview -->
+<script src="https://unpkg.com/vue-shockinflux-payview@1.0.0/dist/shockinflux.min.js"></script>
 ```
 
 ### Usage
