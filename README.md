@@ -120,11 +120,11 @@ new Vue({
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request 😋
 
-Don't forget to [follow me on twitter](https://twitter.com/temitopedaviid)!
+Don't forget to give me a star and [follow me on twitter](https://twitter.com/temitopedaviid)!
 
 Thanks!
 Adesoji Temitope.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md)
