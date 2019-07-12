@@ -14,7 +14,7 @@ A Vue Plugin for Shockinflux-Payview Payment Gateway.
 npm install vue vue-shockinflux-payview --save
 ```
 
-##### Javascript via CDN
+##### via CDN
 
 ```javascript
 <!-- Vue -->
@@ -22,55 +22,14 @@ npm install vue vue-shockinflux-payview --save
 
 <!-- Vue-shockinflux-payview -->
 <script src="https://unpkg.com/vue-shockinflux-payview@1.0.0/dist/shockinflux.min.js"></script>
-```
-    <div id="app">
-      <shockinflux-payview
-                :email="email"
-                :amount="amount"
-                currency="ngn"
-                template="modern"
-                language="en"
-                action="float"
-                :transactionid="transactionid"
-                :storeid="storeid"
-                :comment="comment"
-                :callback="callback"
-                style-class="paymentbtn"
-                :close="close"
-      >
-        <i class="fas fa-money-bill-alt"></i>
-        Make Payment
-      </shockinflux-payview>
-    </div>
 
-    <script type="text/javascript">
-      new Vue({
-        el: "#app",
-        components: {
-          ShockinfluxPayview: ShockinfluxPayview.default
-        },
-        methods: {
-          callback: function(response) {
-            console.log(response);
-          },
-          close: function() {
-            console.log("Payment canceled");
-          }
-        },
-        data: {
-          email: "foobar@example.com",
-          amount: 10000,
-          transactionid: "836327236732632671009",
-          storeid: "g1xq8y87************9XBJbKXuZo+x3uqw=",
-          comment: "This is a test"
-        }
-      });
-    </script>
 ```
 
 ### Usage
 
-##### Via NPM
+
+##### Via NPM/ Vue-cli
+[Usage Example via NPM or Yarn](examples/commonjs/App.vue)
 
 ###### shockinflux-payview.vue
 
@@ -126,9 +85,8 @@ export default {
 </style>
 ```
 
-[Usage Example via NPM or Yarn](examples/commonjs/App.vue)
-
 #### via CDN
+[Usage Example via CDN](examples/index.html)
 
 ```javascript
 new Vue({
@@ -154,15 +112,13 @@ new Vue({
 });
 ```
 
-[Usage Example via CDN](examples/index.html)
-
 ## Contributing
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b feature-name`
 3. Commit your changes: `git commit -am 'Some commit message'`
 4. Push to the branch: `git push origin feature-name`
-5. Submit a pull request 😉😉
+5. Submit a pull request 😋
 
 Don't forget to [follow me on twitter](https://twitter.com/temitopedaviid)!
 
