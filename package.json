@@ -1,0 +1,55 @@
+{
+  "name": "vue-shockinflux-payview",
+  "version": "1.0.0",
+  "description": "Vue Shockinflux Payview Component for Vue 2.x.",
+  "main": "dist/shockinflux.min.js",
+  "scripts": {
+    "lint": "eslint src --ext=js,vue  || exit 0",
+    "lint:fix": "eslint src --ext=js,vue --fix  || exit 0",
+    "dev": "webpack --env=webpack.dev && webpack-dev-server --content-base=./examples/commonjs --env=webpack.dev --open --hot",
+    "dist": "webpack --env=webpack.dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temitopeadesoji/vue-shockinflux-payview.git"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "Shockinflux",
+    "Vue",
+    "Vuejs",
+    "Vue 2",
+    "Payment Gateway",
+    "Shockinflux Payment",
+    "Shockinflux Payview",
+    "Myne"
+  ],
+  "author": "Adesoji Temitope",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/temitopeadesoji/shockinflux-payview/issues"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.14.1",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "standard": "^12.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue": "^2.6.7",
+    "vue-loader": "^15.6.4",
+    "vue-template-compiler": "^2.6.7",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
