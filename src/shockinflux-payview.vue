@@ -72,7 +72,7 @@ export default {
     },
     methods: {
         payWithShockinflux() {
-            console.log(this.transactionid)
+            // console.log(this.transactionid)
             window.shock_payview({
                 'email': this.email,
                 'amount': this.amount,

@@ -46,7 +46,6 @@ npm install vue vue-shockinflux-payview --save
                 :storeid="storeid"
                 :comment="comment"
                 :callback="callback"
-                style-class="shockinflux-inline-btn"
                 :close="close"
     ><i>Pay Now!</i></ShockinfluxPayview>
 </template>
@@ -110,6 +109,36 @@ new Vue({
       comment: "This is a test",
   }
 });
+```
+
+#### with NUXT SSR(server-side rendering)
+
+###### /plugins/vue-shockinflux-payview.js
+```javascript
+import Vue from 'vue'
+import ShockinfluxPayview from "vue-shockinflux-payview";
+Vue.component('ShockinfluxPayview', ShockinfluxPayview);
+```
+###### /nuxt.config.js
+```javascript
+  plugins: [{ src: "~plugins/vue-shockinflux", ssr: false }]
+```
+###### pay-test.vue
+```
+                    <shockinflux-payview
+                        :email="email"
+                        :amount="amount"
+                        currency="ngn"
+                        template="modern"
+                        language="en"
+                        action="float"
+                        :transactionid="transactionid"
+                        :storeid="storeid"
+                        :comment="comment"
+                        :callback="callback"
+                        style-class="shockinflux-inline-btn"
+                        :close="close"
+                    ><i>Pay Now!</i></shockinflux-payview>
 ```
 
 ## Contributing
